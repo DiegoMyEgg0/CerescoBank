@@ -16,16 +16,10 @@ hr{
     margin-top: 1rem;
 }
 
-.dm-serif-display-regular {
-  font-family: "DM Serif Display", serif;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.dm-serif-display-regular-italic {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-style: italic;
 }
 
 .flex-space-between-center{
@@ -91,11 +85,11 @@ hr{
 /* Login Box ---------------------------------------------------------------------------*/
 
 .login{
-    margin-top: 20%;
+    margin: 20% 0 1rem 0;
     border-radius: 3%;
-    height: 34rem;
-    max-width: 23.5rem;
-    margin-bottom: 1rem;
+    height: 35.5rem;
+    width: 100%;
+    max-width: 30rem;
     background-color: white;
     border: 0.25rem solid black;
 }
@@ -104,14 +98,19 @@ hr{
     background-color: #2C0A8F;
     border-radius: 3%;
     height: 20%;
+    justify-content: center;
+}
+
+.login-header > h1{
+    color: white;
+    font-weight: 600;
 }
 
 
 .username{
-    width: 30rem;
-    height: 5rem;
-    margin: 1rem;
-    margin-top: 3rem;
+    max-width: 40rem;
+    height: 6rem;
+    margin: 3rem 0 0 0;
     flex-direction: column;
 }
 
@@ -125,9 +124,9 @@ hr{
 }
 
 .password{
-    width: 30rem;
-    height: 5rem;
-    margin-bottom: 2rem;
+    max-width: 40rem;
+    height: 6rem;
+    margin: 0 0 0 0;
     flex-direction: column;
 }
 
@@ -142,12 +141,12 @@ hr{
 
 .login-body > button{
     width: 16rem;
-    height: 2rem;
+    height: 4rem;
     border-radius: 1cap;
     background-color: #FFCC00;
-    margin-bottom: 1rem;
+    margin: 1rem 0 1rem 0;
     font-weight: bolder;
-    margin-top: 1rem;
+    font-size: x-large;
 }
 
 .login-body > a{
@@ -157,6 +156,8 @@ hr{
 .login-header > img, hr{
     display: none;
 }
+
+.login-body > a > img
 
 .login-header > h1{
     margin-top: 1rem;
@@ -180,6 +181,7 @@ hr{
     border-radius: 5rcap;
     height: 34rem;
     width: 90%;
+    max-width: 30rem;
     margin-bottom: 1rem;
     padding-bottom: 0;
     margin: 2.5rem;
@@ -206,8 +208,7 @@ hr{
     margin-bottom: 1rem;
     color: white;
     align-self: center;
-    text-decoration-line: underline;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.75rem;
 }
 
@@ -215,7 +216,9 @@ hr{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     width: 100%;
+    text-align: center;
     list-style-type: none;
+    padding: 0;
 }
 
 .account-types-body > ul > li{
@@ -250,7 +253,7 @@ hr{
     padding-top: 2rem;
     background-color: #2C0A8F;
     height: 38rem;
-    width: 41rem;
+    width: 100%;
 }
 
 .fdic-credit{
@@ -313,6 +316,37 @@ hr{
 
 .credit-ad{
     max-width: 100%;
+}
+
+.locations{
+    padding: 2rem 1rem 0 1rem;
+}
+
+.location-title{
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.atm-title{
+    font-size: large;
+    font-weight: 300;
+}
+
+.atm-text{
+    font-size: medium;
+}
+
+
+
+.footer{
+    background-color: #2C0A8F;
+}
+
+.footer > p{
+    color: white;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    width: 100%;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -482,7 +516,6 @@ hr{
     margin-bottom: 1rem;
     color: white;
     align-self: self-start;
-    text-decoration-line: underline;
     font-weight: 400;
 }
 
