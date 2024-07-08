@@ -30,23 +30,75 @@ body{
 
 /* Header Section ---------------------------------------------------------------------------*/
 
-.header{
-    background-color: #2C0A8F;
+nav{
+    background: #2C0A8F;
     max-height: 4rem;
     max-width: 100%;
     padding-left: 1rem;
     padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
-.header > img{
+.header-ceresco{
     max-width: 8rem;
+    margin-right: 2rem;
 }
 
-.menu{
-    height: 3rem;
-    margin-top: 1%;
-    background-color: transparent;
-    border: transparent;
+nav > ul{
+    list-style-type: none;
+    background: #2C0A8F;
+}
+
+nav > ul > li{
+    display: inline-block;
+    position: relative;
+    border-radius: 2cap;
+}
+
+ul > li > a{
+    display: block;
+    padding: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown > li{
+    display: block;
+    border-radius: 2cap;
+}
+
+.dropdown{
+    width: 100%;
+    background: #2C0A8F;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 0 0 2cap 2cap;
+}
+
+.dropdown-parent{
+    border-radius: 2cap 2cap 0 0;
+}
+
+nav > ul > li:hover{
+    background: #FFCC00;
+}
+
+ul > li:hover > a{
+    color: black;
+}
+
+.dropdown> li:hover{
+    background: #FFCC00;
+}
+
+nav > ul > li:hover > ul.dropdown{
+    display: block;
 }
 
 /* Hero Section ---------------------------------------------------------------------------*/
@@ -242,6 +294,7 @@ body{
     max-width: 18rem;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 .account-types-body > a > button{
@@ -335,6 +388,10 @@ body{
     max-width: 100%;
 }
 
+.credit-ad-crop{
+    display: none;
+}
+
 .locations{
     padding: 2rem 1rem 0 1rem;
     max-width: 30rem;
@@ -366,8 +423,8 @@ body{
 }
 
 .contact{
-    width: 100%;
-    max-width: 30rem;
+    width: 95%;
+    max-width: 45rem;
     border: 0.25rem solid black;
     border-radius: 1.1rem;
     margin: 2rem;
@@ -456,17 +513,18 @@ body{
     font-size: x-small;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
 
-
+.credit-ad{
+    display: none;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+.credit-ad-crop{
+    display: block;
+    max-width: 100%;
+}
     
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -639,6 +697,11 @@ body{
 .credit-ad{
     height: 100%;
     width: 100%;
+    display: block;
+}
+
+.credit-ad-crop{
+    display: none;
 }
 
 .contact-section{
