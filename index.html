@@ -10,13 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div class="header flex-space-between-center">
-        <img src="images/CerescoWhite.png" alt="CerescoBank Logo">
-        <div class="dropdown">
-            <button type="reset" class="menu"><img class= "menu" src="images/menuicon.png" alt="Menu Icon"></button>
-        </div>
-    </div>
+        <nav>
+            <a href="index.html"><img class="header-ceresco" src="images/CerescoWhite.png" alt="CerescoBank Logo"></a>
+            <ul>
+                <li><a class="roboto-regular" href="index.html">Home</a></li>
+                <li class="dropdown-parent">
+                    <a class="roboto-regular" href="#">Accounts & Services</a>
+                    <ul class="dropdown">
+                        <li><a href="deposit-accounts.html">Deposit Accounts</a></li>
+                        <li><a href="loans.html">Loans</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="additional-services.html">Additional Services</a></li>
+                    </ul>
+                </li>
+                <li><a class="roboto-regular" href="about.html">About Us</a></li>
+                <li><a class="roboto-regular" href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a class="roboto-regular" href="resources.html">Additional Resources</a></li>
+            </ul>
+        </nav>
 
 <!-- Hero Section-->
 
@@ -133,6 +144,7 @@
         </div>
         <div class="credit-right flex-center-center">
             <img class="credit-ad" src="images/CreditCard.png" alt="Credit Card Advertisement">
+            <img class="credit-ad-crop" src="images/CreditCardCropped.png" alt="Credit Card Advertisement">
         </div>
     </div>
 
