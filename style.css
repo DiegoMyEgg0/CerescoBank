@@ -4,6 +4,10 @@ body{
     margin: 0;
 }
 
+embed{
+    height: 100vh;
+}
+
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -30,14 +34,35 @@ body{
 
 /* Header Section ---------------------------------------------------------------------------*/
 
-nav{
+.page-header{
     background: #2C0A8F;
     max-height: 4rem;
     max-width: 100%;
     padding-left: 1rem;
-    padding-right: 0.5rem;
+    padding-right: 10rem;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.triangle{
+    width: 0.8rem;
+    height: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.triangle-black{
+    display: none;
+}
+
+.dropdown-parent > a{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header-ceresco{
@@ -89,6 +114,10 @@ nav > ul > li:hover{
     background: #FFCC00;
 }
 
+nav > ul > .dropdown-parent:hover{
+    background: #ffffff;
+}
+
 ul > li:hover > a{
     color: black;
 }
@@ -99,6 +128,14 @@ ul > li:hover > a{
 
 nav > ul > li:hover > ul.dropdown{
     display: block;
+}
+
+nav > ul > li:hover > a > img.triangle-black{
+    display: block;
+}
+
+nav > ul > li:hover > a > img.triangle-white{
+    display: none;
 }
 
 /* Hero Section ---------------------------------------------------------------------------*/
@@ -420,6 +457,7 @@ nav > ul > li:hover > ul.dropdown{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .contact{
@@ -460,6 +498,7 @@ nav > ul > li:hover > ul.dropdown{
 
 .footer{
     background-color: #2C0A8F;
+    margin-top: 2rem;
 }
 
 .footer > p{
@@ -511,6 +550,35 @@ nav > ul > li:hover > ul.dropdown{
 
 .privacy-policy{
     font-size: x-small;
+}
+
+.about-container > img{
+    width: 20%;
+    margin: 2rem;
+}
+
+.about-container{
+    width: 100%;
+}
+
+.about-head{
+ font-size: x-large;
+ font-weight: 600;
+ letter-spacing: 0.15rem;
+}
+
+.about-paragraph{
+    font-size: medium;
+    text-align: center;
+    line-height: 2rem;
+    width: 80%;
+}
+
+.about-container > hr{
+    color: #2C0A8F;
+    border: 0.1rem solid #2C0A8F;
+    width: 20%;
+    margin-top: 0;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -709,6 +777,7 @@ nav > ul > li:hover > ul.dropdown{
     justify-content: space-between;
     padding: 4rem;
     margin: 1rem;
+    margin-bottom: 0;
     max-width: 88%;
 }
 
@@ -730,9 +799,14 @@ nav > ul > li:hover > ul.dropdown{
     font-size: large;
 }
 
+.about-paragraph{
+    width: 40%;
+}
+
 .privacy-policy{
     max-width: 60%;
     font-size: small;
 }
+
 
 }
